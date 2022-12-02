@@ -24,7 +24,7 @@ let search = async () => {
 }
 
 let getData = async (query) => {
-    let url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${query}&key=AIzaSyCaByxgbZatU811NGETMB3Xbn9yyYz2ubg`;
+    let url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${query}&key=AIzaSyC6y9GQmnFU0Qg17ssVCACP1CAES2dfCvk`;
     // let url = ` https://swapi.dev/api/people/?search={query}`;
 
     let res = await fetch(url);
