@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="playVideo()">
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" alt="" class="menu-icon" />
+            <img src="images/youtube.png" alt="" class="logo" onclick="move()" />
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" id="query" placeholder="Search" />
+                <button onclick="search()">Search</button>
+                <!-- <img src="images/search.png" /> -->
+            </div>
+            <img src="images/voice-search.png" class="mic-icon" />
+        </div>
+        <div class="nav-right flex-div">
+            <img src="images/upload.png" alt="" />
+            <img src="images/more.png" alt="" />
+            <img src="images/notification.png" alt="" />
+            <img src="images/parag.jpg" alt="" class="user-icon" />
+        </div>
+    </nav>
+
+
+    <div class="container play-container">
+        <div class="row">
+            <div class="play-video">
+                <!-- <video controls autoplay>
+                    <source src="images/video.mp4" type="video/mp4">
+                </video> -->
+                
+                <iframe width="1080" height="315" id="play_video" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="tags">
+                    <a href="">#coding</a> <a href="">#HTML</a> <a href="">#CSS</a> <a href="">#JavaScript</a>
+                </div>
+
+                <h3>Best Youtube Channel To Learn Web Development</h3>
+
+                <div class="play-video-info">
+                    <p>1225 views &bull; 2 days ago</p>
+                    <div>
+                        <a href=""><img src="images/like.png" alt="">125</a>
+                        <a href=""><img src="images/dislike.png" alt="">1</a>
+                        <a href=""><img src="images/share.png" alt="">Share</a>
+                        <a href=""><img src="images/save.png" alt="">Save</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="publisher">
+                    <img src="images/parag.jpg" alt="">
+                    <div>
+                        <p>Easy Tutorial</p>
+                        <span>500k Subscribers</span>
+                    </div>
+                    <button type="button">Subscribe</button>
+
+                </div>
+                <div class="video-description">
+                    <p>Channel that makes learning easy</p>
+                    <p>Subscribe Easy Tutorial to watch more videos</p>
+                    <hr>
+                    <h4>134 comments</h4>
+
+                    <div class="add_comments">
+                        <img src="images/parag.jpg" alt="">
+                        <input type="text" placeholder="Write comments...">
+                    </div>
+                    <div class="old_comment">
+                        <img src="images/parag.jpg" alt="">
+                        <div>
+                            <h3>prayag <span>2 days ago</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aspernatur ipsum
+                                voluptatem iste rem accusantium dolores molestias recusandae illum tempora.</p>
+                            <div class="comment-action">
+                                <img src="images/like.png" alt="">
+                                <span>244</span>
+                                <img src="images/dislike.png" alt="">
+                                <span>2</span>
+                                <span>Reply</span>
+                                <a href="">All replies</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="old_comment">
+                        <img src="images/parag.jpg" alt="">
+                        <div>
+                            <h3>prayag <span>2 days ago</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aspernatur ipsum
+                                voluptatem iste rem
+                                accusantium dolores molestias recusandae illum tempora.</p>
+                            <div class="comment-action">
+                                <img src="images/like.png" alt="">
+                                <span>244</span>
+                                <img src="images/dislike.png" alt="">
+                                <span>2</span>
+                                <span>Reply</span>
+                                <a href="">All replies</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="old_comment">
+                        <img src="images/parag.jpg" alt="">
+                        <div>
+                            <h3>prayag <span>2 days ago</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aspernatur ipsum
+                                voluptatem iste rem
+                                accusantium dolores molestias recusandae illum tempora.</p>
+                            <div class="comment-action">
+                                <img src="images/like.png" alt="">
+                                <span>244</span>
+                                <img src="images/dislike.png" alt="">
+                                <span>2</span>
+                                <span>Reply</span>
+                                <a href="">All replies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="right-sidebar">
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail1.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best channel that help you to ba a web developer</a>
+                        <p>Easy Tuturial</p>
+                        <p>15k views</p>
+                    </div>
+                </div>
+
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail2.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best channel that help you to ba a web developer</a>
+                        <p>Easy Tuturial</p>
+                        <p>15k views</p>
+                    </div>
+                </div>
+
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail3.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best channel that help you to ba a web developer</a>
+                        <p>Easy Tuturial</p>
+                        <p>15k views</p>
+                    </div>
+                </div>
+
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail4.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best channel that help you to ba a web developer</a>
+                        <p>Easy Tuturial</p>
+                        <p>15k views</p>
+                    </div>
+                </div>
+
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail5.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best channel that help you to ba a web developer</a>
+                        <p>Easy Tuturial</p>
+                        <p>15k views</p>
+                    </div>
+                </div>
+
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail6.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best channel that help you to ba a web developer</a>
+                        <p>Easy Tuturial</p>
+                        <p>15k views</p>
+                    </div>
+                </div>
+
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail7.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best channel that help you to ba a web developer</a>
+                        <p>Easy Tuturial</p>
+                        <p>15k views</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+<script src="script.js"></script>
